@@ -9,8 +9,8 @@ print('Create SVM classfier')
 clf = svm.SVC(gamma=0.001, C=100)
 
 print('Training ...')
-trainData = digits.data[:-4]
-trainLabels = digits.target[:-4]
+trainData = digits.data[:-6]
+trainLabels = digits.target[:-6]
 
 clf.fit(trainData, trainLabels)
 print('Finish training')
