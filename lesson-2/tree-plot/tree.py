@@ -21,7 +21,7 @@ class TreeNode(object):
         if self.isLeaf():
             return 1
 
-        # 如果是非叶子结点，高度为子树最大宽度
+        # 如果是非叶子结点，高度为子树宽度之和
         return sum([child.getWidth() for child in self.children.values()])
 
 
